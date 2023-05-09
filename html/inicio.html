@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/inicio.css" media="screen" />
+    <title>site de e-commerce</title>
+    <link rel="icon" type="image/png" href="images/fonelogo.png"/>   
+</head>
+
+<body>
+<main>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --bg-color: var(--bg-color) #051b36;
+    --tex-color: #fff;
+    --main-color: #edb24c;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+
+body {
+    background-color: #1d2631;
+    color: var(--tex-color);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegação {
+    display: flex;
+}
+
+.navegação a {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegação a:hover {
+    color: var(--main-color);
+
+}
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    transform: translate(-50%);
+}
+
+#menu {
+    font-size: 35px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.header-icons i:hover {
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+
+.section {
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.home-text h5 {
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.search-div{
+    position: relative;
+    align-items: center;
+    background: #1d2631;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.search-text{
+    color: white;
+    background:none;
+    border: 0;
+    outline: 0;
+    width: 0;
+    padding: 0;
+    transition: 0.6s;
+}
+
+.bx bx-search{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.search-div:hover > .search-text{
+    width: 100px;
+
+}
+.pesquisabtn{
+    color: #fcfcfc;
+    background: #edb24c;
+    border-radius:30px;
+
+}
+
+.carrosel1{
+    text-align: center;
+    margin: 0;
+    box-sizing:content-box;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
+    width: 100%;
+
+}
+
+.carrosel1 li{
+    display: inline-block;
+}
+
+.carrosel1 img{
+    display: inline;
+    padding: 10px;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.carrosel1 img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+.carrosel2{
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
+    width: 100%;
+
+}
+.carrosel2 li{
+    display: inline-block;
+}
+
+.carrosel2 img{
+    display: inline;
+    padding: 10px;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+.carrosel2 img:hover{
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+
+.carrosel3{
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+.carrosel3 li{
+    display: inline-block;
+
+}
+
+.carrosel3 img{
+    display: inline;
+    padding: 10px;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+.carrosel3 img:hover{
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+  
+.container {
+    width: 100%;
+    overflow: hidden; /* para evitar que a altura da div seja afetada */
+  }
+  
+  .col-md-3 {
+    color: #fcfcfc;
+    float: left;
+    width: 25%;
+    box-sizing: border-box; /* para incluir as bordas e o preenchimento no cálculo da largura */
+    text-align: center; /* para centralizar o conteúdo na coluna */
+  }
+  .list-unstyled li a {
+
+    color: #fcfcfc;
+
+  }   
+</style>
+<header>
+        <a href="#" class="logo"><i class='bx bx-headphone'>HeadPhone</i></a>
+        <ul class="navegação">
+            <li><a href="inicio.html">inicio</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+<!--navegação-->
+        <div class="header-icons">
+            <div id="caixa" class="search-div">
+                <input type="text" name= "search" class="search-text" placeholder="Pesquisar">
+                <form method="post" action="12.php">
+                <button class="pesquisabtn" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <i class='bx bx-cart'></i>
+            <div id ="menu"><i class='bx bx-menu'></i></div>
+<!--header-icons-->
+</header>
+<!--primeiro carrosel-->
+    <div class="carrosel1">
+    <h1>Fones</h1>
+        <nav>
+            <ul>
+                <li><a href="produto.html" target="_blank"><img src="./Images/fone02.png"  target="_blank" alt="fonei2go"></a></li>
+                <li><a href="produto.html" target="_blank"><img src="Images/fone01.png"  alt="foneredzeus"></a></li>
+                <li><a href="produto.html" target="_blank"><img src="Images/fone03.png"  alt="fonestingerhyperx"></a></li>
+            </ul>   
+        </nav>
+    </div>
+<!--segundo carrosel-->
+    <div class="carrosel2">
+     <h1>Fones Exclusivos</h1>
+         <nav>
+            <ul>
+                <li><a href="produto.html" target="_blank"><img src="fone1.png"  target="_blank" alt="fonei2go"></a></li>
+                <li><a href="produto.html" target="_blank"><img src="Images/fone2.png"  alt="foneredzeus"></a></li>
+                <li><a href="produto.html" target="_blank"><img src="Images/fone4-removebg-preview.png"  alt="fonestingerhyperx"></a></li>
+            </ul>     
+        </nav>
+    </div>
+<!--terceiro carrosel-->
+    <div class="carrosel3">
+    <h1>Fones Intrauriculares</h1>
+        <nav>
+            <ul>
+                <li><a href="" target="_blank"><img src="./images/foneitnra1.png"  target="_blank" alt="fonei2go"></a></li>
+                <li><a href="" target="_blank"><img src="Images/foneintra2.png"  alt="foneredzeus"></a></li>
+                <li><a href="" target="_blank"><img src="Images/foneintra3.png"  alt="fonestingerhyperx"></a></li>   
+            </ul>     
+        </nav>
+    </div>
+<!--Rodape-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                      <h4>Sobre Nós</h4>
+                      <p>Somos uma loja online que oferece os melhores produtos a preços acessíveis.</p>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Categorias</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Fones</a></li>
+                        <li><a href="#">Tipos de Fones</a></li>
+                        <li><a href="#">Acessórios</a></li>          
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Atendimento ao Cliente</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Central de Atendimento</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Política de Trocas e Devoluções</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h4>Entre em Contato</h4>
+                      <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope"></i> contato@lojaonline.com.br</li>
+                        <li><i class="fa fa-phone"></i> (00) 5555-5555</li>
+                        <li><i class="fa fa-map-marker"></i>Endereco : Em Breve</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/pag_beleza.css">
+        <script type="text/javascript" src="/pag.js"></script>
+        <title>e-comerce</title>
+    </head>
+
+<body>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: var(--bg-color) #051b36;
+    --tex-color: #fff;
+    --main-color: #edb24c;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+
+body {
+    background-color: #1d2631;
+    color: var(--tex-color);
+}
+
+
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegação {
+    display: flex;
+}
+
+.navegação a {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegação a:hover {
+    color: var(--main-color);
+
+}
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 35px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+}
+.search-div{
+    position: relative;
+    align-items: center;
+    background: #1d2631;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.search-text{
+    color: white;
+    background:none;
+    border: 0;
+    outline: 0;
+    width: 0;
+    padding: 0;
+    transition: 0.6s;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+   
+  .checkout-panel {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    height: 766px;
+   
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    margin-left: 300px;
+  }
+  .panel-body {
+    padding: 100px 80px 0;
+    flex: 1;
+  }
+   
+  .title {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: rgb(119, 219, 119);
+  }
+  .barra-progresso {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+   
+  .step {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 30px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-color: #efefef;
+  }
+   
+  .step:after {
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 22px;
+    width: 225px;
+    height: 6px;
+    content: '';
+    background-color: #efefef;
+  }
+   
+  .step:before {
+    color: #2e2e2e;
+    position: absolute;
+    top: 40px;
+  }
+   
+  .step:last-child:after {
+    content: none;
+  }
+   
+  .step.active {
+    background-color: #1abc9c;
+  }
+  .step.active:after {
+    background-color: #1abc9c;
+  }
+  .step.active:before {
+    color: #1abc9c;
+  }
+  .step.active + .step {
+    background-color: #1abc9c;
+  }
+  .step.active + .step:before {
+    color: #1abc9c;
+  }
+   
+  .step:nth-child(1):before {
+    content: 'Cartão';
+  }
+  .step:nth-child(2):before {
+    right: -40px;
+    content: 'Confirmação';
+  }
+  .step:nth-child(3):before {
+    right: -30px;
+    content: 'Pagamento';
+  }
+  .step:nth-child(4):before {
+    right: 0;
+    content: 'Finalizar';
+  }
+  .payment-method {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+   
+  .method {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    height: 122px;
+    padding-top: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .card-logos {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .radio-input {
+    margin-top: 20px;
+  }
+   
+  input[type='radio'] {
+    display: inline-block;
+  }
+  .input-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  .input-fields label {
+    display: block;
+    margin-bottom: 10px;
+    color: #b4b4b4;
+  }
+   
+  .info {
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    margin-top: 50px;
+    opacity: .5;
+    color: rgb(119, 219, 119);
+  }
+   
+  div[class*='column'] {
+    width: 382px;
+  }
+   
+  input[type='text'],
+  input[type='password'] {
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding-right: 40px;
+    padding-left: 16px;
+    color: rgba(46, 46, 46, .8);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+    outline: none;
+  }
+   
+  input[type='text']:focus,
+  input[type='password']:focus {
+    border-color: rgb(119, 219, 119);
+  }
+   
+  #date { background: url(img/icons_calendar_black.png) no-repeat 95%; }
+  #cardholder { background: url(img/icons_person_black.png) no-repeat 95%; }
+  #cardnumber { background: url(img/icons_card_black.png) no-repeat 95%; }
+  #verification { background: url(img/icons_lock_black.png) no-repeat 95%; }
+   
+  .small-inputs {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+   
+  .small-inputs div {
+    width: 182px;
+  }
+  .panel-footer {
+    display: flex;
+    width: 100%;
+    height: 96px;
+    padding: 0 80px;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn {
+    font-size: 16px;
+    width: 163px;
+    height: 48px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 23px;
+  }
+   
+  .back-btn {
+    color: #1abc9c;
+    background: #fff;
+  }
+   
+  .next-btn {
+    color: #fff;
+    background: #1abc9c;
+  }
+   
+  .btn:focus {
+    outline: none;
+  }
+   
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  .blue-border {
+    border: 1px solid rgb(110, 178, 251);
+  }
+  .warning {
+    border-color: #1abc9c;
+  }
+</style>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'>HeadPhone</i></a>
+
+        <ul class="navegação">
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+        <!--navegação-->
+        
+        <div class="header-icons">
+          <div id="caixa" class="search-div">
+              <input type="text" name= "search" class="search-text" placeholder="Pesquisar">
+              <form method="post" action="12.php">
+              <button class="pesquisabtn" type="submit">Pesquisar</button>
+              </form>
+          </div>
+          <i class='bx bx-cart'></i>
+          <div id ="menu"><i class='bx bx-menu'></i></div>
+
+        <!--header-icons-->
+    </header>
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <h2 class="title">Finalizar Compra</h2>
+     
+        <div class="barra-progresso">
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+     
+        <div class="payment-method">
+          <label for="card" class="method card">
+            <div class="card-logos">
+              <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png"/>
+              <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png"/>
+            </div>
+     
+            <div class="radio-input">
+              <input id="card" type="radio" name="payment">
+              Pagamento R$ Valor com cartão de credito 
+            </div>
+          </label>
+     
+          <label for="paypal" class="method paypal">
+            <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png"/>
+            <div class="radio-input">
+              <input id="paypal" type="radio" name="payment">
+              Pagamento R$ Valor com  PayPal
+            </div>
+          </label>
+        </div>
+     
+        <div class="input-fields">
+          <div class="column-1">
+            <label for="cardholder">Nome</label>
+            <input type="text" style="color:white" id="cardholder" />
+     
+            <div class="small-inputs">
+              <div>
+                <label for="date">Validade do cartão</label>
+                <input type="text" style="color:white" id="date"/>
+              </div>
+     
+              <div>
+                <label for="verification">CVV* </label>
+                <input type="password" style="color:white" id="verification"/>
+              </div>
+            </div>
+     
+          </div>
+          <div class="column-2">
+            <label for="cardnumber">Numero do cartão</label>
+            <input type="password" style="color:white" id="cardnumber"/>
+     
+            <span class="info">* CVV é o numero atrás do cartão.</span>
+          </div>
+        </div>
+      </div>
+     
+      <div class="panel-footer">
+        <button class="btn back-btn">Voltar</button>
+        <button class="btn next-btn">Finalizar</button>
+      </div>
+    </div>
+
+</body>
+
+</html>

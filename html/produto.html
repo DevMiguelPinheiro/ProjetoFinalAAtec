@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/produto_beleza.css">
+        <title>e-comerce</title>
+    </head>
+
+<body>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: var(--bg-color) #051b36;
+    --tex-color: #fff;
+    --main-color: #edb24c;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+
+body {
+    background-color: #1d2631;
+    color: var(--tex-color);
+}
+
+
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegação {
+    display: flex;
+}
+
+.navegação a {
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegação a:hover {
+    color: var(--main-color);
+
+}
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 35px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i {
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.header-icons i:hover {
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+
+.section {
+
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.home-text h5 {
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.search-div{
+    position: relative;
+    align-items: center;
+    background: #1d2631;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.search-text{
+    color: white;
+    background:none;
+    border: 0;
+    outline: 0;
+    width: 0;
+    padding: 0;
+    transition: 0.6s;
+}
+
+.bx bx-search{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.search-div:hover > .search-text{
+    width: 100px;
+
+}
+.btn {
+    color: var(--main-color)
+}
+.slideshow{
+    margin-left: 250px;
+    margin-top: -600px;
+    width: 40vh;
+    height: 110vh;
+    display: flex;
+    animation: bg-Slide 10s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+@keyframes bg-Slide{
+    0%{
+      background-image: url("fone01.png" );
+    }
+    60%{
+      background-image: url("fone02.png");
+    }
+    100%{
+      background-image: url("fone03.png");
+    }
+}
+.bt1{
+    background-color: #1d2631; 
+    border: none; 
+    color: white;
+}
+.bt2{
+    background-color: #1d2631; 
+    border: none; 
+    color: white;
+}
+.bt3{
+    background-color: #1d2631; 
+    border: none; 
+    color: white;
+}
+
+.cor1{
+    text-align: center;
+    border-radius: 50%;
+  }
+  .cor2{
+    text-align: center;
+    border-radius: 50%;
+  }
+  .cor3{
+    text-align: center;
+    border-radius: 50%;
+  }   
+</style>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'>HeadPhone</i></a>
+        <ul class="navegação">
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+<!--navegação-->
+        <div class="header-icons">
+            <div id="caixa" class="search-div">
+                <input type="text" name= "search" class="search-text" placeholder="Pesquisar">
+                <form method="post" action="12.php">
+                <button class="pesquisabtn" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <i class='bx bx-cart'></i>
+            <div id ="menu"><i class='bx bx-menu'></i></div>
+        </div>
+<!--header-icons-->  
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+         
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>  Headset<br>  Sem Fio</h1>
+            <h5>O melhor Headset</h5>
+            <h3> 200R$</h3>
+            <h4>Cores disponiveis: </h4>
+            <button type="button" class="bt1" >
+                <img src="rgbAzul.jpg" class="cor1" width="36" height="36">
+            </button>
+            <button type="button" class="bt2">
+                <img src="rgbBranco.png" class="cor2" width="36" height="36">
+            </button>
+            <button type="button" class="bt3">
+                <img src="rgbPreto.png" class="cor3" width="36" height="36">
+            </button>
+            <br>
+            <a href="#" class="btn">Compre Agora</a>
+        </div><!--home-text-->
+        
+    </section><!--home-->
+    <div class="slideshow" width="300" height="250"></div>
+
+</body>
+
+</html>
